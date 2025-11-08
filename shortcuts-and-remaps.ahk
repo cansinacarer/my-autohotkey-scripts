@@ -34,10 +34,6 @@
 LCtrl::LAlt
 LAlt::LCtrl
 
-; Swap Ctrl + Tab and Alt + Tab to keep the positions the same
-^Tab::Send("!{Tab}")
-!Tab::Send("^{Tab}")
-
 ; Make Alt + E bring up the emoji input (like fn + E on MacOS)
 !e::Send("#.")
 
