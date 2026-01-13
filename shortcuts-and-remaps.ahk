@@ -38,6 +38,9 @@ Browser_Home::Escape
 Browser_Back::F13
 Browser_Search::F14
 
+; Make Ctrl + Space execute Ctrl + Win + Alt + R for PowerToys run
+^Space::Send("^#!R")
+
 ; --------------------------
 ; Other MacOS-like shortcuts
 ;---------------------------
