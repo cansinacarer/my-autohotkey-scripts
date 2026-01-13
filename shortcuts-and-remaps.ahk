@@ -4,38 +4,54 @@
 ; MacOS style text navigation
 ;----------------------------
 
-; Make Win + Left do Ctrl + Left
-#Left::Send("^{Left}")
+; Replace home button with Escape
+Browser_Home::Escape
 
-; Make Win + Shift + Left do Ctrl + Shift + Left
-#+Left::Send("^+{Left}")
 
-; Make Win + Right do Ctrl + Right
-#Right::Send("^{Right}")
+; ---------------------------
+; MacOS style text navigation
+;----------------------------
 
-; Make Win + Shift + Right do Ctrl + Shift + Right
-#+Right::Send("^+{Right}")
+; Make Alt + Left do Ctrl + Left
+!Left::Send("^{Left}")
 
-; Make Ctrl + Left go to start of line (like Home)
+; Make Alt + Shift + Left do Ctrl + Shift + Left
+!+Left::Send("^+{Left}")
+
+; Make Alt + Right do Ctrl + Right
+!Right::Send("^{Right}")
+
+; Make Alt + Shift + Right do Ctrl + Shift + Right
+!+Right::Send("^+{Right}")
+
+; Make Alt + Left go to start of line (like Home)
 ^Left::Home
 
-; Make Ctrl + Right go to end of line (like End)
+; Make Alt + Right go to end of line (like End)
 ^Right::End
 
-; Make Alt + Backspace act like Delete
-!Backspace::Delete
+; Page up page down with Cmd Up down
+#Up::Send("{PageUp}")
+#Down::Send("{PageDown}")
 
+; Disable browser back and browser search buttons
+Browser_Back::F13
+Browser_Search::F14
+
+; Make Cmd + Space be registered as F15 so that I can assign it in PowerToys
+^Space::F15
 
 ; --------------------------
 ; Other MacOS-like shortcuts
 ;---------------------------
 
-; Make left Ctrl key the left Alt key and vice versa
-LCtrl::LAlt
-LAlt::LCtrl
+; Make Windows button work as Ctrl
+LWin::LCtrl
+RWin::RCtrl
 
-; Make Alt + E bring up the emoji input (like fn + E on MacOS)
-!e::Send("#.")
+; Make Left Control work as Windows button
+LCtrl::LWin
+RCtrl::RWin
 
 ; Make Ctrl + Q execute Alt + F4
 ^Q::Send("!{F4}")
