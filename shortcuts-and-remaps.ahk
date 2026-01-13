@@ -38,9 +38,6 @@ Browser_Home::Escape
 Browser_Back::F13
 Browser_Search::F14
 
-; Make Cmd + Space be registered as F15 so that I can assign it in PowerToys
-^Space::F15
-
 ; --------------------------
 ; Other MacOS-like shortcuts
 ;---------------------------
