@@ -39,7 +39,10 @@ Browser_Back::F13
 Browser_Search::F14
 
 ; Make Ctrl + Space execute Ctrl + Win + Alt + R for PowerToys run
-^Space::Send("^#!R")
+;^Space::Send("^#!R")
+
+; Make Ctrl + Space execute Alt + Shift + 5 for PowerToys run
+^Space::Send("!+5")
 
 ; --------------------------
 ; Other MacOS-like shortcuts
