@@ -122,6 +122,6 @@ F12::Volume_Up
 
 ;--------------------------------------------------------------
 ; For listening to keystrokes
-InstallKeybdHook()
-KeyHistory
+; InstallKeybdHook()
+; KeyHistory
 ;--------------------------------------------------------------
