@@ -32,7 +32,7 @@ F3::SendInput("{LWin}")
 ^F4::SendInput("{F4}")
 F4::F16
 ^F5::SendInput("{F5}")
-F5::F17
+F5::#h
 ^F6::SendInput("{F6}")
 F6::F18
 ^F7::SendInput("{F7}")
